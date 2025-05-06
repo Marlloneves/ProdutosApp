@@ -5,6 +5,16 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutosApp.API", "ProdutosApp.API\ProdutosApp.API.csproj", "{CA9732CB-7390-4AEF-B528-9066CD6CBD01}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{4CF81869-6546-4A0F-9542-C983A2D10ACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{39AB30D0-F3CA-4CD2-AC13-ACD957C9540F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{AC37C31A-E92C-4EC4-8A43-AB50B1B7EAD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - InfraStructure", "4 - InfraStructure", "{5B149FC4-E45D-4EEA-A3EC-E12E8E1C9ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutosApp.Domain", "ProdutosApp.Domain\ProdutosApp.Domain.csproj", "{B89615B2-1F5B-4705-8DAF-3E94B6002D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +25,16 @@ Global
 		{CA9732CB-7390-4AEF-B528-9066CD6CBD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9732CB-7390-4AEF-B528-9066CD6CBD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9732CB-7390-4AEF-B528-9066CD6CBD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89615B2-1F5B-4705-8DAF-3E94B6002D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89615B2-1F5B-4705-8DAF-3E94B6002D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89615B2-1F5B-4705-8DAF-3E94B6002D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89615B2-1F5B-4705-8DAF-3E94B6002D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA9732CB-7390-4AEF-B528-9066CD6CBD01} = {4CF81869-6546-4A0F-9542-C983A2D10ACF}
+		{B89615B2-1F5B-4705-8DAF-3E94B6002D39} = {AC37C31A-E92C-4EC4-8A43-AB50B1B7EAD3}
 	EndGlobalSection
 EndGlobal
