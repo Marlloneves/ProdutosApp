@@ -16,7 +16,7 @@ namespace ProdutosApp.Domain.Validations
 
             RuleFor(p => p.Nome)
                 .NotEmpty().WithMessage("O nome do produto não pode ser vazio.")
-                .Length(3, 150).WithMessage("O nome do produto deve ter entre 3 e 150 caracteres.");
+                .Length(3, 50).WithMessage("O nome do produto deve ter entre 3 e 150 caracteres.");
 
             RuleFor(p => p.Preco)
                 .NotNull().WithMessage("O preço do produto não pode ser nulo.")
