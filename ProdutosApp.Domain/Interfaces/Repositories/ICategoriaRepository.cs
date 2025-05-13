@@ -2,7 +2,7 @@
 
 namespace ProdutosApp.Domain.Interfaces.Repositories
 {
-    public interface ICategoriaProduto : IBaseRepository<Categoria, Guid?>
+    public interface ICategoriaRepository : IBaseRepository<Categoria, Guid?>
     {
     }
 }

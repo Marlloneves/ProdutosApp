@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProdutosApp.Domain.Interfaces.Repositories;
 using ProdutosApp.Infra.Data.Contexts;
+using ProdutosApp.Infra.Data.Repositories;
 
 namespace ProdutosApp.Infra.Data.Extensions
 {
@@ -18,6 +20,8 @@ namespace ProdutosApp.Infra.Data.Extensions
         {
             services.AddDbContext<DataContext>(options => 
                 options.UseSqlServer(configuration.GetConnectionString("ProdutosAppBD")));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
