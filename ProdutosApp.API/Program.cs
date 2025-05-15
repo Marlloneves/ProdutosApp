@@ -1,3 +1,4 @@
+using ProdutosApp.API.Middlewares;
 using ProdutosApp.Application.Extensions;
 using ProdutosApp.Domain.Extensions;
 using ProdutosApp.Infra.Data.Extensions;
@@ -18,6 +19,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//Middlewares
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
