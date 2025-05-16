@@ -1,3 +1,4 @@
+using ProdutosApp.API.Extensions;
 using ProdutosApp.API.Middlewares;
 using ProdutosApp.Application.Extensions;
 using ProdutosApp.Domain.Extensions;
@@ -18,15 +19,16 @@ builder.Services.AddDomainServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Somente PRD
+if (builder.Environment.IsProduction())
+{
+    builder.Configuration.AddAzureIdentity();
+}
+
 var app = builder.Build();
 
 //Middlewares
 app.UseMiddleware<ExceptionHandlingMiddleware>();
-
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
 //Swagger
 app.UseSwagger();

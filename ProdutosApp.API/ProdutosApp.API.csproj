@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.4.0" />
+    <PackageReference Include="Azure.Identity" Version="1.14.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
       <PrivateAssets>all</PrivateAssets>
@@ -21,10 +23,6 @@
     <ProjectReference Include="..\ProdutosApp.Application\ProdutosApp.Application.csproj" />
     <ProjectReference Include="..\ProdutosApp.Domain\ProdutosApp.Domain.csproj" />
     <ProjectReference Include="..\ProdutosApp.Infra\ProdutosApp.Infra.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>
