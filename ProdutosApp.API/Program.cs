@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 //Somente PRD
 if (builder.Environment.IsProduction())
 {
-    builder.Configuration.AddAzureIdentity();
+    builder.Configuration.AddAzureIdentity(builder.Configuration);
 }
 
 var app = builder.Build();
